@@ -3954,6 +3954,13 @@ font-size: 35px;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #D8D8D8;
 }
+@media (max-width: 575px) {
+    .titleSec h4.back-head{
+        font-size: 53px;
+        line-height: 75px !important;
+        margin-bottom: -35px;
+    }
+}
 
 @media (max-height: 500px){
 .titleSec h4.back-head {
