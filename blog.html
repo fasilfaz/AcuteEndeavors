@@ -104,6 +104,38 @@ var pbLocalizeObj = {"ajax":"https:\/\/teknoppy.com\/wp-admin\/admin-ajax.php","
 			#simple-chat-button--container{
 	bottom:100px !important;
 }		</style>
+<style>
+    #loftloader-wrapper #loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #loftloader-wrapper #loader .loader-logo {
+        width: 150px;
+        height: auto;
+        animation: logoAnimation 1.5s ease-in-out infinite;
+    }
+    
+    @keyframes logoAnimation {
+        0% {
+            transform: scale(0.95);
+            opacity: 0.7;
+        }
+        50% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0.95);
+            opacity: 0.7;
+        }
+    }
+    
+    .loader-section.section-fade {
+        background: #6610f2; /* Match your brand color */
+    }
+    </style>
 		<!-- Bootstrap -->
 
 
@@ -129,7 +161,17 @@ var pbLocalizeObj = {"ajax":"https:\/\/teknoppy.com\/wp-admin\/admin-ajax.php","
 </head>
 <body class="blog loftloader-lite-enabled elementor-default elementor-kit-1137"><div id="loftloader-wrapper" class="pl-beating" data-show-close-time="15000" data-max-load-time="0"><div class="loader-section section-fade"></div><div class="loader-inner"><div id="loader"><span></span></div></div><div class="loader-close-button" style="display: none;"><span class="screen-reader-text">Close</span></div></div>
 
-
+    <div id="loftloader-wrapper" class="pl-beating" data-show-close-time="15000" data-max-load-time="0">
+        <div class="loader-section section-fade"></div>
+        <div class="loader-inner">
+            <div id="loader">
+                <img src="/assets/logo.svg" alt="Loading..." class="loader-logo">
+            </div>
+        </div>
+        <div class="loader-close-button" style="display: none;">
+            <span class="screen-reader-text">Close</span>
+        </div>
+    </div>
   <div class="loading">
     <svg class="hidden">
         <symbol id="icon-arrow" viewBox="0 0 24 24">
