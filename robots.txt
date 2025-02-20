@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /teck2.teknoppy.com/
-Disallow: /teck3.teknoppy.com/
